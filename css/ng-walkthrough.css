@@ -152,7 +152,7 @@
 
 /* take 'done' button into consideration */
 .walkthrough-container-transparency > .walkthrough-bottom .walkthrough-text-container{
-    bottom: 70px;
+    bottom: 100px;
 }
 
 .walkthrough-tip-icon-image-front{

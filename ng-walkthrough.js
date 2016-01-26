@@ -8,9 +8,9 @@ angular.module('ng-walkthrough', [])
         var DOM_WALKTHROUGH_TIP_ICON_CLASS = ".walkthrough-tip-icon-text-box";
         var DOM_WALKTHROUGH_ARROW_CLASS = ".walkthrough-arrow";
         var DOM_WALKTHROUGH_DONE_BUTTON_CLASS = "walkthrough-done-button";
-        var BUTTON_CAPTION_DONE = "Got it!";
+        var BUTTON_CAPTION_DONE = "Entendi";
         var PADDING_HOLE = 5;
-        var PADDING_ARROW_START = 5;
+        var PADDING_ARROW_START = 0;
         var hasIonic = false;
         var canTouch = true; //Used to prevent issue where onWalkthroughHide fired twice when have angular and ionic
                              //due to ontouch being called and then on-click called.
@@ -30,7 +30,7 @@ angular.module('ng-walkthrough', [])
                             '</div>',
                             '<img class="walkthrough-element walkthrough-icon" ng-show="icon && icon!=\'arrow\'" ng-src="{{walkthroughIcon}}">',
                             '<div class="walkthrough-element walkthrough-arrow" ng-show="icon==\'arrow\'"></div>',
-                            '<button class="walkthrough-element walkthrough-button-positive walkthrough-done-button" type="button" ng-if="useButton" ng-click="onCloseClicked($event)" on-touch="onCloseTouched($event)">',
+                            '<button class="walkthrough-element walkthrough-done-button button button-balanced" type="button" ng-if="useButton" ng-click="onCloseClicked($event)" on-touch="onCloseTouched($event)">',
                                 '{{buttonCaption}}',
                             '</button>',
                         '</div>',
