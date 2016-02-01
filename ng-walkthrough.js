@@ -1,6 +1,6 @@
 angular.module('ng-walkthrough', [])
-	.directive("walkthrough", ['$log', '$timeout', '$window', '$injector',
-	function($log, $timeout, $window, $injector) {
+    .directive("walkthrough", ['$log', '$timeout', '$window', '$injector',
+    function($log, $timeout, $window, $injector) {
         var DOM_WALKTHROUGH_TRANSPARENCY_TEXT_CLASS = ".walkthrough-text";
         var DOM_WALKTHROUGH_TIP_TEXT_CLASS = ".walkthrough-tip-text-box";
         var DOM_WALKTHROUGH_HOLE_CLASS = ".walkthrough-hole";
@@ -43,8 +43,8 @@ angular.module('ng-walkthrough', [])
                         '<button class="walkthrough-done-button walkthrough-tip-done-button-text-box" type="button" ng-if="useButton" ng-click="onCloseClicked($event)" on-touch="onCloseTouched($event)">',
                             '<img class="walkthrough-tip-button-image-text-box" ng-src="{{closeIcon}}" alt="x">',
                         '</button>',
-                        '<pre class="walkthrough-element walkthrough-tip-text-box" ng-class="{\'walkthrough-tip-text-box-color-black\': tipColor==\'BLACK\', \'walkthrough-tip-text-box-color-white\': tipColor==\'WHITE\'}" ng-bind="mainCaption">',
-                        '</pre>',
+                        '<div class="walkthrough-element walkthrough-tip-text-box" ng-class="{\'walkthrough-tip-text-box-color-black\': tipColor==\'BLACK\', \'walkthrough-tip-text-box-color-white\': tipColor==\'WHITE\'}" ng-bind="mainCaption">',
+                        '</div>',
                     '</div>',
                 '</div>',
                 '<!-- Always show as this gives us the gray background -->',

@@ -34,17 +34,20 @@
 }
 
 .walkthrough-element.walkthrough-text{
-    margin-top: 10%;
-    width: 70%;
-    color: #fff;
-    text-align: center;
+  margin-top: 10%;
+  width: 90%;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 30%;
 }
 
 .walkthrough-element.walkthrough-done-button{
     position:absolute;
     bottom: 30px;
     height: 30px;
-    width: 80px;
+    width: 100px;
     display: inline-block;
     right: 30px;
     margin: 0 auto;
